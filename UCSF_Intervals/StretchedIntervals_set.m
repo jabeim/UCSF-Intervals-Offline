@@ -38,27 +38,30 @@ def.intervallen = round(set.num_notes .* (set.tone_dur_ms+set.silence_dur_ms).*d
 set.level_per_tone = 60-set.max_level;
 set.silence = tone(1000,set.silence_dur_ms,0,def.samplerate).*0;
 
-calFileLoc = '/labs/oxenhamlab/ToneCalibration/';
+% calFileLoc = '/labs/oxenhamlab/ToneCalibration/';
 % calFileLoc = 'C:\Users\Jbeim\OneDrive\Documents\MATLAB\local scripts\Online Experiments\UCSF_Intervals\';
 exp = def.expname;
 id = work.vpname;
-calFile = [calFileLoc id '_' exp '.mat'];
+% calFile = [calFileLoc id '_' exp '.mat'];
 
-if def.modelEnable == 1
-    set.calFreqs = [125 250 500 2000 7352];
-    set.calLevels = zeros(size(set.calFreqs));
-else
-    if exist(calFile,'File')
-        caldata = load(calFile);
-        set.calFreqs = caldata.allFreqs;
-        set.calLevels = caldata.levels;
-    else 
-        if isfield(def,'afc_message')
-            % this works on web only
-            def.afc_message.Value = 'No calibration data found. Please contact the researcher.';
-        else
-            error('No calibration data found. Please contact the researcher');
-        end    
-    end
-end
+set.calFreqs = [125 250 500 2000 7352];
+set.calLevels = zeros(size(set.calFreqs));
+
+% if def.modelEnable == 1
+%     set.calFreqs = [125 250 500 2000 7352];
+%     set.calLevels = zeros(size(set.calFreqs));
+% else
+%     if exist(calFile,'File')
+%         caldata = load(calFile);
+%         set.calFreqs = caldata.allFreqs;
+%         set.calLevels = caldata.levels;
+%     else 
+%         if isfield(def,'afc_message')
+%             % this works on web only
+%             def.afc_message.Value = 'No calibration data found. Please contact the researcher.';
+%         else
+%             error('No calibration data found. Please contact the researcher');
+%         end    
+%     end
+% end
 % eof

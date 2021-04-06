@@ -111,5 +111,5 @@ work.pausesig = pausesig;				 % must contain the pausesignal
 
 % This should capture most of the stimulus generation time on a per-trial
 % basis.
-stimGenTime = toc(stimGenStartTime);
-work.elapsedTime = work.elapsedTime+stimGenTime;
+% stimGenTime = toc(stimGenStartTime);
+% work.elapsedTime = work.elapsedTime+stimGenTime;

@@ -56,8 +56,8 @@ def.messages = 'autoSelect';			% message configuration file, if 'autoSelect' AFC
 def.language = 'EN';				% EN = english, DE = german, FR = french, DA = danish
 
 % save paths and save function
-def.result_path = '/Results/';				% where to save results
-def.control_path = '/Control';				% where to save control files
+def.result_path = '.\Results\';				% where to save results
+def.control_path = '.\Control\';				% where to save control files
 def.savefcn = 'default';			% function which writes results to disk
 
 % samplerate and sound output
