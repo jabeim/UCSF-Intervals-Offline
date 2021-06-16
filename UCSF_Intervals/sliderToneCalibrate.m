@@ -1,8 +1,8 @@
 function sliderToneCalibrate(id,tag,allFreqs,fig)
 %% initial static parameters
 
-htmlSource = '/web/catss/Audio/webAudioPlayer.html';       % for use on MLWA Server
-writePath = '/web/catss/Audio/';                      % for use on MLWA Server
+htmlSource = '/web/catss/Audio/webAudioPlayer.html';                % for use on MLWA Server
+writePath = '/web/catss/Audio/';                                    % for use on MLWA Server
 dataPath = '/labs/oxenhamlab/ToneCalibration/';                     % for use on MLWA Server
 
 

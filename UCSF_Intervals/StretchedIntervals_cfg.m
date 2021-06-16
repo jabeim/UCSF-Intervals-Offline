@@ -78,17 +78,17 @@ def.parrand = [1 1 1 1 1];     % toggles random presentation of the elements in 
 
 
 %% Webapp required parameters are set here
-% % def.afcwin = 'afc_win_forWebapp';
-% 
-% webDataRoot = [filesep 'labs' filesep 'oxenhamlab' filesep]; % primary directory for storing results
-% def.control_path = [webDataRoot def.expname filesep 'Control' filesep]; % control file location
-% def.result_path = [webDataRoot def.expname filesep 'Output' filesep];   % output file location
-% 
-% def.webAudioPath = [filesep 'web' filesep 'catss' filesep 'Audio' filesep]; % location where webAudioPlayer.html and temporary audio files will be stored
-% 
-% def.trialResponseIntervalTime = 1; % how many seconds should count as the response interval. Experiment does not currently track response time.
-% def.externSoundCommand = 'webAudio'; % override standard AFC audio using webAudioPlayer.html.
-% def.htmlDebug = 0;
-% def.debug = 0; % if debug is not set to 0 afc will produce warnings/errors due to nonstandard parameters stored in the def structure.
+def.afcwin = 'afc_win_forWebapp';
+
+webDataRoot = [filesep 'labs' filesep 'oxenhamlab' filesep]; % primary directory for storing results
+def.control_path = [webDataRoot def.expname filesep 'Control' filesep]; % control file location
+def.result_path = [webDataRoot def.expname filesep 'Output' filesep];   % output file location
+
+def.webAudioPath = [filesep 'web' filesep 'catss' filesep 'Audio' filesep]; % location where webAudioPlayer.html and temporary audio files will be stored
+
+def.trialResponseIntervalTime = 1; % how many seconds should count as the response interval. Experiment does not currently track response time.
+def.externSoundCommand = 'webAudio'; % override standard AFC audio using webAudioPlayer.html.
+def.htmlDebug = 0;
+def.debug = 0; % if debug is not set to 0 afc will produce warnings/errors due to nonstandard parameters stored in the def structure.
 
 %eof
